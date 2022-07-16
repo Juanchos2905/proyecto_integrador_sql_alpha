@@ -1,4 +1,9 @@
-# Proyecto integrador SQL P.1
+# Proyecto integrador SQL grupo Alpha
+
+## Integrantes:
+- Juan Manuel valencia
+- Lorena Valentina Montoya
+- Daniel Valencia Mosquera
 
 Aquí se afizanzarán los procesos aprendidos en el módulo bases de datos SQL. En el que se realizará de manera práctica la creación de la primera parte de la base de datos de la página web ESCUELA DE PROGRAMACIÓN DE SOFTWARE CÓDIGO 13. 
 ## Diagrama MER
