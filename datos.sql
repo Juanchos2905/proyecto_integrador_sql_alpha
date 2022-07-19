@@ -6,11 +6,59 @@ VALUES ('Sebastián Moreno', 'C.C', '1048674274', '3246458970', '2004-05-12', 'a
 ('Manuela vides', 'T.I', '1836292738', '3205147896', '2005-06-06', 'acá va la imagen', 'Esta administrador se encuentra cursando el módulo de Backend'),
 ('Juan Pablo Jiménez', 'C.C', '1927392739', '3002065874', '1998-12-12', 'acá va la imagen', 'Este maestro se encuentra enseñando Backend');
 
+INSERT INTO roles(name)
+
+VALUES ('Estudiante'),
+ ('Maestro'),
+ ('Administrador'), 
+ ('Psicóloga'), 
+ ('Coordinador');
+
+INSERT INTO users_roles(user_id, role_id)
+
+VALUES (1, 2), (5, 2), (3, 4), (2, 1), (4, 3);
+
+INSERT INTO news(title, description, picture, date, user_id)
+
+
+VALUES('Código c-13 el cambio que necesita los jóvenes',
+'El día de hoy se lanzan las convocatorias para participar en la prueba piloto escuela de programación código c-13',
+'acá va la imagen','2022-04-11', 1),
+('¡Los jóvenes se conectan!',
+'Después del lanzamiento y convocatoria la escuela de desarrollo de software c-13 muchos jóvenes se sienten emocionados de poder pertenecer y crecer como futuros programadores',
+'acá va la imagen', '2022-04-16', 5),
+('Inicia la prueba', 
+'El día de hoy los jóvenes darán su primer paso realizando las pruebas de ingreso a la escuela',
+'acá va la imagen', '2022-04-20', 3),
+('Anuncian los futuros programadores de la comuna 13',
+'Hoy 25 de abril se anuncian los participantes ganadores que serán parte de  este proyecto',
+'acá va la imagen','2022-04-25', 2),
+('Se llego el gran día',
+'Hoy 1 de mayo los jóvenes empiezan esta gran aventura llamada programación',
+'acá va la imagen', '2022-05-01', 4);
+
+INSERT INTO Cities(name)
+
+VALUES ('Itagüí'), ('Bello'), ('Medellín'), ('Poblado'), ('Sabaneta');
+
+
+INSERT INTO addresses(name, city_id, user_id)
+
+VALUES ('Cll 34 AA N° 125-166', 1, 1),
+('Crr 88 A N° 23-25', 5, 5), 
+('Cll 23 AA N° 134-188', 3, 3),
+('Cll 34 AA N° 178-123', 2, 2), 
+('Crr 24 A N° 45-56', 4, 4);
+
+
+INSERT INTO journies(name)
+
+VALUES ('Mañana'), ('Tarde'), ('Noche');
+
 INSERT INTO careers(name, section, picture, description)
 
 VALUES ('Frontend', '01', 'Acá va la imagen', 'Esta es la carrera que se esta cursando'), 
 ('Backend', '02', 'Acá va la imagen', 'Esta es la carrera que se esta cursando');
-
 
 INSERT INTO group_s(code, journey_id, career_id)
 
@@ -19,6 +67,24 @@ VALUES ('FM2201', 1, 1),
 ('FT2202', 2, 1),
 ('BM2202', 1, 2),
 ('BT2203', 2, 1);
+
+
+INSERT INTO asignatures(name)
+
+VALUES ('Nivelatorio'), 
+('Base de Datos'), 
+('JavasCript'), 
+('NodeJs'), 
+('React'), 
+('Html');
+
+INSERT INTO modalities(name)
+
+VALUES ('Virtual'), ('Presencial');
+
+INSERT INTO users_groups(user_id, group_id)
+
+VALUES (1, 1), (2, 2), (3, 3), (2, 2), (4, 4);
 
 INSERT INTO modules(asignature_id, term, description, modality_id)
 
@@ -40,74 +106,3 @@ INSERT INTO careers_modules(module_id, career_id)
 
 VALUES (1,1), (1,2), (2,2), (3,1), (3,2), (4,2), (5,1), (6,1);
 
-INSERT INTO users_groups(user_id, group_id)
-
-VALUES (1, 1), (2, 2), (3, 3), (2, 2), (4, 4);
-
-INSERT INTO news(title, description, picture, date, user_id)
-
-
-VALUES('Código c-13 el cambio que necesita los jóvenes',
-'El día de hoy se lanzan las convocatorias para participar en la prueba piloto escuela de programación código c-13',
-'acá va la imagen','2022-04-11', 1),
-('¡Los jóvenes se conectan!',
-'Después del lanzamiento y convocatoria la escuela de desarrollo de software c-13 muchos jóvenes se sienten emocionados de poder pertenecer y crecer como futuros programadores',
-'acá va la imagen', '2022-04-16', 5),
-('Inicia la prueba', 
-'El día de hoy los jóvenes darán su primer paso realizando las pruebas de ingreso a la escuela',
-'acá va la imagen', '2022-04-20', 3),
-('Anuncian los futuros programadores de la comuna 13',
-'Hoy 25 de abril se anuncian los participantes ganadores que serán parte de  este proyecto',
-'acá va la imagen','2022-04-25', 2),
-('Se llego el gran día',
-'Hoy 1 de mayo los jóvenes empiezan esta gran aventura llamada programación',
-'acá va la imagen', '2022-05-01', 4);
-
-
-INSERT INTO roles(name)
-
-VALUES ('Estudiante'),
- ('Maestro'),
- ('Administrador'), 
- ('Psicóloga'), 
- ('Coordinador');
-
-
-
-INSERT INTO users_roles(user_id, role_id)
-
-VALUES (1, 2), (5, 2), (3, 4), (2, 1), (4, 3);
-
-
-INSERT INTO Cities(name)
-
-VALUES ('Itagüí'), ('Bello'), ('Medellín'), ('Poblado'), ('Sabaneta');
-
-
-INSERT INTO addresses(name, city_id, user_id)
-
-VALUES ('Cll 34 AA N° 125-166', 1, 1),
-('Crr 88 A N° 23-25', 5, 5), 
-('Cll 23 AA N° 134-188', 3, 3),
-('Cll 34 AA N° 178-123', 2, 2), 
-('Crr 24 A N° 45-56', 4, 4);
-
-
-INSERT INTO journies(name)
-
-VALUES ('Mañana'), ('Tarde'), ('Noche');
-
-
-INSERT INTO asignatures(name)
-
-VALUES ('Nivelatorio'), 
-('Base de Datos'), 
-('JavasCript'), 
-('NodeJs'), 
-('React'), 
-('Html');
-
-
-INSERT INTO modalities(name)
-
-VALUES ('Virtual'), ('Presencial');
