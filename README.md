@@ -19,12 +19,12 @@ El archivo [Script_db.sql](https://github.com/Panditax0902/proyecto_integrador_s
 
 Consulta #1: Se desea obtener el nombre del usuario, el título de la noticia que publicó y que sea administrador en código 13 ordenando por Id.
 
-Consulta #2: Se desea saber la lista de usuarios a que grupo pertenece y que carrera está cursando.
+Consulta #2: Se desea saber la lista de usuarios a que grupo pertenecen y que carrera están cursando.
 
 Consulta #3: Se quiere obtener la ciudad y cuatnos participantes de frontend viven en ella.
 
-Consulta #4: Se desea saber quienes son nacidos despues del 2000 los estudiantes de 
+Consulta #4: Se desea saber quienes son nacidos despues del 2000 que sean estudiantes de 
 
-frontend que sean de una determinada ciudad.
+frontend y además pertenezcan a determinada ciudad.
 
-Consulta #5: Contar cuantos estudiantes son de itagui.
+Consulta #5: Contar cuantos estudiantes son de Itagüí.
